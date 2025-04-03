@@ -25,6 +25,16 @@ mod iter;
 
 pub use iter::*;
 
+#[inline]
+const fn char_len_utf16(c: char) -> usize {
+    c.len_utf16()
+}
+
+#[inline]
+const fn char_len_utf32(_c: char) -> usize {
+    1
+}
+
 macro_rules! utfstr_common_impl {
     {
         $(#[$utfstr_meta:meta])*
@@ -33,6 +43,7 @@ macro_rules! utfstr_common_impl {
         type UStr = $ustr:ident;
         type UCStr = $ucstr:ident;
         type UtfError = $utferror:ident;
+        char_len_fn = $char_len_fn:ident;
         $(#[$from_slice_unchecked_meta:meta])*
         fn from_slice_unchecked() -> {}
         $(#[$from_slice_unchecked_mut_meta:meta])*
@@ -209,8 +220,8 @@ macro_rules! utfstr_common_impl {
             /// left side.
             #[must_use]
             pub fn trim_end(&self) -> &Self {
-                if let Some((index, _)) = self.char_indices().rfind(|(_, c)| !c.is_whitespace()) {
-                    &self[..=index]
+                if let Some((index, c)) = self.char_indices().rfind(|(_, c)| !c.is_whitespace()) {
+                    &self[..index + $char_len_fn(c)]
                 } else {
                     <&Self as Default>::default()
                 }
@@ -514,6 +525,7 @@ utfstr_common_impl! {
     type UStr = U16Str;
     type UCStr = U16CStr;
     type UtfError = Utf16Error;
+    char_len_fn = char_len_utf16;
 
     /// Converts a slice to a string slice without checking that the string contains valid UTF-16.
     ///
@@ -695,6 +707,7 @@ utfstr_common_impl! {
     type UStr = U32Str;
     type UCStr = U32CStr;
     type UtfError = Utf32Error;
+    char_len_fn = char_len_utf32;
 
     /// Converts a slice to a string slice without checking that the string contains valid UTF-32.
     ///
@@ -2339,6 +2352,12 @@ mod test {
 
         let s = utf16str!("  עברית  ");
         assert!(Some('ע') == s.trim_start().chars().next());
+
+        let s = utf16str!("      💕Heart ");
+        assert_eq!(utf16str!("💕Heart "), s.trim_start());
+
+        let s = utf16str!(" Heart💕      ");
+        assert_eq!(utf16str!(" Heart💕"), s.trim_end());
     }
 
     #[test]
@@ -2351,5 +2370,11 @@ mod test {
 
         let s = utf32str!("  עברית  ");
         assert!(Some('ע') == s.trim_start().chars().next());
+
+        let s = utf32str!("      💕Heart ");
+        assert_eq!(utf32str!("💕Heart "), s.trim_start());
+
+        let s = utf32str!(" Heart💕      ");
+        assert_eq!(utf32str!(" Heart💕"), s.trim_end());
     }
 }
