@@ -936,7 +936,7 @@ ustring_common_impl! {
     /// that directly use string length, where the strings are known to have proper nul-termination
     /// already, or where strings are merely being passed through without modification.
     ///
-    /// [`U16CString`][crate::U16CString] should be used instead if nul-aware strings are required.
+    /// [`U16CString`][U16CString] should be used instead if nul-aware strings are required.
     ///
     /// # Examples
     ///
@@ -1063,7 +1063,7 @@ ustring_common_impl! {
     /// that directly use string length, where the strings are known to have proper nul-termination
     /// already, or where strings are merely being passed through without modification.
     ///
-    /// [`U32CString`][crate::U32CString] should be used instead if nul-aware strings are required.
+    /// [`U32CString`][U32CString] should be used instead if nul-aware strings are required.
     ///
     /// # Examples
     ///

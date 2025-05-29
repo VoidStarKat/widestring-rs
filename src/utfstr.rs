@@ -484,7 +484,7 @@ utfstr_common_impl! {
     /// [`Utf16Str`] is to [`Utf16String`][crate::Utf16String] as [`str`] is to [`String`].
     ///
     /// [`Utf16Str`] slices are string slices that are always valid UTF-16 encoding. This is unlike
-    /// the [`U16Str`][crate::U16Str] string slices, which may not have valid encoding. In this way,
+    /// the [`U16Str`][U16Str] string slices, which may not have valid encoding. In this way,
     /// [`Utf16Str`] string slices most resemble native [`str`] slices of all the types in this
     /// crate.
     ///

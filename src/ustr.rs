@@ -524,7 +524,7 @@ macro_rules! ustr_common_impl {
 ustr_common_impl! {
     /// 16-bit wide string slice with undefined encoding.
     ///
-    /// [`U16Str`] is to [`U16String`][crate::U16String] as [`OsStr`][std::ffi::OsStr] is to
+    /// [`U16Str`] is to [`U16String`][U16String] as [`OsStr`][std::ffi::OsStr] is to
     /// [`OsString`][std::ffi::OsString].
     ///
     /// [`U16Str`] are string slices that do not have a defined encoding. While it is sometimes
@@ -641,7 +641,7 @@ ustr_common_impl! {
 ustr_common_impl! {
     /// 32-bit wide string slice with undefined encoding.
     ///
-    /// [`U32Str`] is to [`U32String`][crate::U32String] as [`OsStr`][std::ffi::OsStr] is to
+    /// [`U32Str`] is to [`U32String`][U32String] as [`OsStr`][std::ffi::OsStr] is to
     /// [`OsString`][std::ffi::OsString].
     ///
     /// [`U32Str`] are string slices that do not have a defined encoding. While it is sometimes
