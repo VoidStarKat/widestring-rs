@@ -655,6 +655,7 @@ where
     #[inline(never)]
     #[cold]
     #[track_caller]
+    #[allow(unknown_lints, clippy::uninlined_format_args)]
     fn slice_end_index_len_fail(index: usize, len: usize) -> ! {
         panic!(
             "range end index {} out of range for slice of length {}",
@@ -665,6 +666,7 @@ where
     #[inline(never)]
     #[cold]
     #[track_caller]
+    #[allow(unknown_lints, clippy::uninlined_format_args)]
     fn slice_index_order_fail(index: usize, end: usize) -> ! {
         panic!("slice index starts at {} but ends at {}", index, end);
     }
