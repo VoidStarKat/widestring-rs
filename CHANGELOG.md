@@ -4,6 +4,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- `trim_end` character boundary panic when processing 4-byte characters. By [@syrflover].
+- Documentation typos on `WideCString` type alias
 
 ## [1.2.0] - 2024-03-15 <a name="1.2.0"></a>
 ### Changed
@@ -362,6 +365,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 [@OpenByteDev]: https://github.com/OpenByteDev
 [@daxpedda]: https://github.com/daxpedda
 [@mr-adult]: https://github.com/mr-adult
+[@syrflover]: https://github.com/syrflover
 
 [Unreleased]: https://github.com/starkat99/widestring-rs/compare/v1.2.0...HEAD
 [1.2.0]: https://github.com/starkat99/widestring-rs/compare/v1.1.0...v1.2.0
