@@ -1653,12 +1653,12 @@ impl core::fmt::Debug for U32CString {
     }
 }
 
-/// Alias for `U16String` or `U32String` depending on platform. Intended to match typical C
+/// Alias for [`U16CString`] or [`U32CString`] depending on platform. Intended to match typical C
 /// `wchar_t` size on platform.
 #[cfg(not(windows))]
 pub type WideCString = U32CString;
 
-/// Alias for `U16String` or `U32String` depending on platform. Intended to match typical C
+/// Alias for [`U16CString`] or [`U32CString`] depending on platform. Intended to match typical C
 /// `wchar_t` size on platform.
 #[cfg(windows)]
 pub type WideCString = U16CString;
