@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `trim_end` character boundary panic when processing 4-byte characters. By [@syrflover].
 - Documentation typos on `WideCString` type alias
 
+### Added
+- Added GDB pretty printers for `Utf32String` and `Utf32Str`. You can load them from `gdb/widestring.py`.
+
 ## [1.2.0] - 2024-03-15 <a name="1.2.0"></a>
 ### Changed
 - Minor restructing of included license file locations to be more consistent with crates ecosystem.
