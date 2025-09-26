@@ -1,7 +1,7 @@
 # Changelog
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 ### Fixed
@@ -349,41 +349,41 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Initial release.
 
-[#2]: https://github.com/starkat99/widestring-rs/issues/2
-[#14]: https://github.com/starkat99/widestring-rs/issues/14
-[#18]: https://github.com/starkat99/widestring-rs/issues/18
-[#19]: https://github.com/starkat99/widestring-rs/issues/19
-[#20]: https://github.com/starkat99/widestring-rs/issues/20
-[#22]: https://github.com/starkat99/widestring-rs/issues/22
-[#28]: https://github.com/starkat99/widestring-rs/issues/28
-[#37]: https://github.com/starkat99/widestring-rs/issues/37
-[#38]: https://github.com/starkat99/widestring-rs/issues/38
-[#33]: https://github.com/starkat99/widestring-rs/issues/33
-[#39]: https://github.com/starkat99/widestring-rs/issues/39
-[#40]: https://github.com/starkat99/widestring-rs/issues/40
+[#2]: https://github.com/VoidStarKat/widestring-rs/issues/2
+[#14]: https://github.com/VoidStarKat/widestring-rs/issues/14
+[#18]: https://github.com/VoidStarKat/widestring-rs/issues/18
+[#19]: https://github.com/VoidStarKat/widestring-rs/issues/19
+[#20]: https://github.com/VoidStarKat/widestring-rs/issues/20
+[#22]: https://github.com/VoidStarKat/widestring-rs/issues/22
+[#28]: https://github.com/VoidStarKat/widestring-rs/issues/28
+[#37]: https://github.com/VoidStarKat/widestring-rs/issues/37
+[#38]: https://github.com/VoidStarKat/widestring-rs/issues/38
+[#33]: https://github.com/VoidStarKat/widestring-rs/issues/33
+[#39]: https://github.com/VoidStarKat/widestring-rs/issues/39
+[#40]: https://github.com/VoidStarKat/widestring-rs/issues/40
 
 [@nicbn]: https://github.com/nicbn
-[@joshwd36]: https://github.com/joshwb36
+[@joshwd36]: https://github.com/joshwd36
 [@yescallop]: https://github.com/yescallop
 [@OpenByteDev]: https://github.com/OpenByteDev
 [@daxpedda]: https://github.com/daxpedda
 [@mr-adult]: https://github.com/mr-adult
 [@syrflover]: https://github.com/syrflover
 
-[Unreleased]: https://github.com/starkat99/widestring-rs/compare/v1.2.0...HEAD
-[1.2.0]: https://github.com/starkat99/widestring-rs/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/starkat99/widestring-rs/compare/v1.0.2...v1.1.0
-[1.0.2]: https://github.com/starkat99/widestring-rs/compare/v1.0.1...v1.0.2
-[1.0.1]: https://github.com/starkat99/widestring-rs/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/starkat99/widestring-rs/compare/v1.0.0-beta.1...v1.0.0
-[1.0.0-beta.1]: https://github.com/starkat99/widestring-rs/compare/v0.5.1...v1.0.0-beta.1
-[0.5.1]: https://github.com/starkat99/widestring-rs/compare/v0.5.0...v0.5.1
-[0.5.0]: https://github.com/starkat99/widestring-rs/compare/v0.4.3...v0.5.0
-[0.4.3]: https://github.com/starkat99/widestring-rs/compare/v0.4.2...v0.4.3
-[0.4.2]: https://github.com/starkat99/widestring-rs/compare/v0.4.1...v0.4.2
-[0.4.1]: https://github.com/starkat99/widestring-rs/compare/v0.4.0...v0.4.1
-[0.4.0]: https://github.com/starkat99/widestring-rs/compare/v0.3.0...v0.4.0
-[0.3.0]: https://github.com/starkat99/widestring-rs/compare/v0.2.2...v0.3.0
-[0.2.2]: https://github.com/starkat99/widestring-rs/compare/v0.2.1...v0.2.2
-[0.2.1]: https://github.com/starkat99/widestring-rs/compare/v0.2.0...v0.2.1
-[0.2.0]: https://github.com/starkat99/widestring-rs/compare/v0.1.0...v0.2.0
+[Unreleased]: https://github.com/VoidStarKat/widestring-rs/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/VoidStarKat/widestring-rs/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/VoidStarKat/widestring-rs/compare/v1.0.2...v1.1.0
+[1.0.2]: https://github.com/VoidStarKat/widestring-rs/compare/v1.0.1...v1.0.2
+[1.0.1]: https://github.com/VoidStarKat/widestring-rs/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/VoidStarKat/widestring-rs/compare/v1.0.0-beta.1...v1.0.0
+[1.0.0-beta.1]: https://github.com/VoidStarKat/widestring-rs/compare/v0.5.1...v1.0.0-beta.1
+[0.5.1]: https://github.com/VoidStarKat/widestring-rs/compare/v0.5.0...v0.5.1
+[0.5.0]: https://github.com/VoidStarKat/widestring-rs/compare/v0.4.3...v0.5.0
+[0.4.3]: https://github.com/VoidStarKat/widestring-rs/compare/v0.4.2...v0.4.3
+[0.4.2]: https://github.com/VoidStarKat/widestring-rs/compare/v0.4.1...v0.4.2
+[0.4.1]: https://github.com/VoidStarKat/widestring-rs/compare/v0.4.0...v0.4.1
+[0.4.0]: https://github.com/VoidStarKat/widestring-rs/compare/v0.3.0...v0.4.0
+[0.3.0]: https://github.com/VoidStarKat/widestring-rs/compare/v0.2.2...v0.3.0
+[0.2.2]: https://github.com/VoidStarKat/widestring-rs/compare/v0.2.1...v0.2.2
+[0.2.1]: https://github.com/VoidStarKat/widestring-rs/compare/v0.2.0...v0.2.1
+[0.2.0]: https://github.com/VoidStarKat/widestring-rs/compare/v0.1.0...v0.2.0
