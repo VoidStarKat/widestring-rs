@@ -1,11 +1,11 @@
 # widestring
-[![Crates.io](https://img.shields.io/crates/v/widestring.svg)](https://crates.io/crates/widestring/) [![Documentation](https://docs.rs/widestring/badge.svg)](https://docs.rs/widestring/) ![Crates.io](https://img.shields.io/crates/l/widestring) [![Build status](https://github.com/starkat99/widestring-rs/actions/workflows/rust.yml/badge.svg?branch=main&event=push)](https://github.com/starkat99/widestring-rs/actions/workflows/rust.yml)
+[![crates.io](https://img.shields.io/crates/v/widestring.svg)](https://crates.io/crates/widestring) [![Documentation](https://docs.rs/widestring/badge.svg)](https://docs.rs/widestring) [![License](https://img.shields.io/crates/l/widestring)](https://github.com/VoidStarKat/widestring-rs#license) [![Build status](https://github.com/VoidStarKat/widestring-rs/actions/workflows/rust.yml/badge.svg?branch=main&event=push)](https://github.com/VoidStarKat/widestring-rs/actions)
 
-A wide string Rust library for converting to and from wide strings, such as
-those often used in Windows API or other FFI libaries. Both `u16` and `u32` string types are
-provided, including support for UTF-16 and UTF-32, malformed encoding, C-style strings, etc.
+A wide string Rust library for converting to and from wide strings, such as those often used in
+Windows API or other FFI libaries. Both `u16` and `u32` string types are provided, including support
+for UTF-16 and UTF-32, malformed encoding, C-style strings, etc.
 
-Macros for converting string literals to UTF-16 and UTF-32 strings at compile time are also 
+Macros for converting string literals to UTF-16 and UTF-32 strings at compile time are also
 included.
 
 *Requires Rust 1.58 or greater.* If you need support for older versions of Rust, use 0.x versions of
@@ -13,7 +13,7 @@ this crate.
 
 ## Documentation
 
-- [Crate API Reference](https://docs.rs/widestring/)
+- [Crate API Reference](https://docs.rs/widestring)
 - [Latest Changes](CHANGELOG.md)
 
 ### Optional Features
@@ -34,9 +34,9 @@ this crate.
 All files in this library are dual-licensed and distributed under the terms of either of:
 
 * [MIT License](LICENSE-MIT)
-  ([http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
+  ([https://opensource.org/license/mit](https://opensource.org/license/mit))
 * [Apache License, Version 2.0](LICENSE-APACHE)
-  ([http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0))
+  ([https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0))
 
 at your option.
 
