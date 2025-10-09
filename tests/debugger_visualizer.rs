@@ -1,4 +1,5 @@
 #![allow(unsupported_calling_conventions)]
+#![cfg(not(windows))]
 
 use debugger_test::debugger_test;
 use widestring::*;
@@ -6,7 +7,6 @@ use widestring::*;
 #[inline(never)]
 fn __break() {}
 
-#[cfg_attr(windows, ignore)]
 #[debugger_test(
     debugger = "cdb",
     commands = r#"
