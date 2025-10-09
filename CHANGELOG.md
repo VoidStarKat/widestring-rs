@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - `trim_end` character boundary panic when processing 4-byte characters. By [@syrflover].
 - Fixed completely broken `U16String::insert_char` which always panicked. Fixes [#46].
-- Documentation typos on `WideCString` type alias
+- Documentation typos on `WideCString` type alias.
+- Fixed `unused_import` lint on `wide*` macros.
 
 ### Added
 - Added GDB pretty printers for `Utf32String` and `Utf32Str`. You can load them from `gdb/widestring.py`.
