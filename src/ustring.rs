@@ -1338,9 +1338,10 @@ impl U16String {
         assert!(idx <= self.len());
         let mut buf = [0; 2];
         let slice = c.encode_utf16(&mut buf);
+        let old_size = self.len();
         self.inner.resize(self.len() + slice.len(), 0);
-        self.inner.copy_within(idx.., idx + slice.len());
-        self.inner[idx..].copy_from_slice(slice);
+        self.inner.copy_within(idx..old_size, idx + slice.len());
+        self.inner[idx..idx + slice.len()].copy_from_slice(slice);
     }
 }
 
@@ -1588,5 +1589,13 @@ mod test {
         let buf = "𤭢";
         let mut s = U16String::from_str(buf);
         assert_eq!(s.pop_char(), Some('𤭢' as u32));
+    }
+
+    #[test]
+    fn insert_char() {
+        // Bug #46
+        let mut s = U16String::from_str("Hllo, world!");
+        s.insert_char(1, 'e');
+        assert_eq!(s.to_string_lossy(), "Hello, world!");
     }
 }
