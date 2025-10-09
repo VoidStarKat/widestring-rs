@@ -1,10 +1,11 @@
+#![allow(unsupported_calling_conventions)]
+
 use debugger_test::debugger_test;
 use widestring::*;
 
 #[inline(never)]
 fn __break() {}
 
-#[allow(unsupported_calling_conventions)]
 #[debugger_test(
     debugger = "cdb",
     commands = r#"
