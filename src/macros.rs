@@ -184,7 +184,8 @@ implement_utf32_macro! {
 #[macro_export]
 macro_rules! widestr {
     ($text:expr) => {{
-        use $crate::u32str;
+        #[allow(unused_imports)]
+        use $crate::*;
         u32str!($text)
     }};
 }
@@ -195,7 +196,8 @@ macro_rules! widestr {
 #[macro_export]
 macro_rules! wideutfstr {
     ($text:expr) => {{
-        use $crate::utf32str;
+        #[allow(unused_imports)]
+        use $crate::*;
         utf32str!($text)
     }};
 }
@@ -206,7 +208,8 @@ macro_rules! wideutfstr {
 #[macro_export]
 macro_rules! widecstr {
     ($text:expr) => {{
-        use $crate::u32cstr;
+        #[allow(unused_imports)]
+        use $crate::*;
         u32cstr!($text)
     }};
 }
@@ -217,7 +220,8 @@ macro_rules! widecstr {
 #[macro_export]
 macro_rules! widestr {
     ($text:expr) => {{
-        use $crate::u16str;
+        #[allow(unused_imports)]
+        use $crate::*;
         u16str!($text)
     }};
 }
@@ -228,7 +232,8 @@ macro_rules! widestr {
 #[macro_export]
 macro_rules! wideutfstr {
     ($text:expr) => {{
-        use $crate::utf16str;
+        #[allow(unused_imports)]
+        use $crate::*;
         utf16str!($text)
     }};
 }
@@ -239,7 +244,8 @@ macro_rules! wideutfstr {
 #[macro_export]
 macro_rules! widecstr {
     ($text:expr) => {{
-        use $crate::u16cstr;
+        #[allow(unused_imports)]
+        use $crate::*;
         u16cstr!($text)
     }};
 }
