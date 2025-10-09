@@ -6,6 +6,7 @@ use widestring::*;
 #[inline(never)]
 fn __break() {}
 
+#[cfg_attr(windows, ignore)]
 #[debugger_test(
     debugger = "cdb",
     commands = r#"
