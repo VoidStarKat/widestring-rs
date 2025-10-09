@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - `trim_end` character boundary panic when processing 4-byte characters. By [@syrflover].
+- Fixed completely broken `U16String::insert_char` which always panicked. Fixes [#46].
 - Documentation typos on `WideCString` type alias
 
 ### Added
@@ -364,6 +365,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#33]: https://github.com/VoidStarKat/widestring-rs/issues/33
 [#39]: https://github.com/VoidStarKat/widestring-rs/issues/39
 [#40]: https://github.com/VoidStarKat/widestring-rs/issues/40
+[#46]: https://github.com/VoidStarKat/widestring-rs/issues/46
 
 [@nicbn]: https://github.com/nicbn
 [@joshwd36]: https://github.com/joshwd36
