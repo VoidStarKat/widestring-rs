@@ -4,6 +4,7 @@ use widestring::*;
 #[inline(never)]
 fn __break() {}
 
+#[allow(unsupported_calling_conventions)]
 #[debugger_test(
     debugger = "cdb",
     commands = r#"
