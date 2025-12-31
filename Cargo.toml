@@ -10,7 +10,7 @@ categories = ["text-processing", "encoding", "development-tools::ffi", "no-std"]
 license = "MIT OR Apache-2.0"
 edition = "2021"
 rust-version = "1.58"
-exclude = [".git*", ".editorconfig"]
+exclude = [".git*", ".editorconfig", ".mailmap"]
 
 [features]
 default = ["std"]
