@@ -1,0 +1,14 @@
+version = 1
+
+# Reuse annotations file.
+#
+# This file controls how reuse-tool finds copyright and license notices within
+# source files.
+#
+# See https://reuse.software and https://github.com/fsfe/reuse-tool for more
+# details.
+
+[[annotations]]
+path = "**"
+SPDX-FileCopyrightText = "2021 Kathryn Long <voidstarkat@robothearts.ca> and other contributors"
+SPDX-License-Identifier = "MIT OR Apache-2.0"
